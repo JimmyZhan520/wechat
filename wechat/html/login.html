@@ -1,0 +1,343 @@
+<!DOCTYPE HTML >
+<html>
+<head>
+	<title>研发专用聊天工具</title>
+	<meta name="description" contnent="The page is used to login!">
+	<meta http-equiv="Content-Type" content="text/html">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../css/login_css.css">	
+	<script type="text/javascript" src="../JQ/jquery-2.2.4.min.js"></script>
+  <script type="text/javascript" src="../JQ/login.js"></script>
+  </script>
+</head>
+<body>
+  <!-- 登录界面 -->
+  <!--Begin Login -->
+<div class="login">
+<!--   <div id="LoginPage"> -->
+      <div id="Login-mainbody">
+      	  <div class="login-box">
+                 <div id="Login-header">
+                     <h3>用户登录</h3>
+              </div>
+      	  	 <div class="login-pirture"></div>
+      	  	  <div class="user_input">
+      	  	     <div class="line">
+      	  	   	   <div class="user">
+                      <label for="username">账号：</label>
+                      <input type="text" id="username" name="username" placeholder="用户名/邮箱" />
+                      <a class="create" href="#">注册账号</a>
+                   </div>
+      	  	   	 </div>
+      	  	   	 <div class="line">
+      	  	       <div class="user">
+                     <label for="password">密码：</label>
+                     <input type="password" id="password" name="password" placeholder="请输入密码" />
+                   </div>
+      	  	       <a class="create" href="#">忘记密码</a>
+      	  	     </div>
+      	  	  </div>
+              <div class="Remember_pass">
+                 <input type="checkbox" name="checkbox1" value="checkbox" id="pass_checkbox">
+                 <label for="pass_checkbox">记住密码</label>
+              </div>
+      	  	  <div class="inButton"><button class="logIn" type="submit">登录</button></div>
+      	  </div>
+      </div> 
+      <!-- </div> -->
+</div>
+  <!--End Login-->
+  <!--Begin Chat-->
+   <!-- 聊天界面 -->
+<div class="Main">   
+   <div id="Mainchat">
+      <div class="slidebar">
+         <div class="slide-header">
+           <div class="user-img">
+              <!-- <img src="../Photo/menber.png" alt="头像"> -->
+              <span class="UserPhoto"></span>
+           </div>
+           <div class="Nickname">
+              <h3 class="display_name"></h3> 
+              <span id="status"></span>         
+           </div>
+           <div class="Tag">
+             <a href="#" id="setting">
+               <img src="../Photo/wechat_02.png">
+             </a>
+               <div class="mmpop">
+                 <ul class="dropdown-menu">
+                   <li id="inf"><a href="#">个人资料</a></li>
+                   <li id="cnf"><a href="#">修改资料</a></li>
+                   <li id="exit"><a href="#">退出登录</a></li>
+                 </ul>
+                </div>
+           </div>
+         </div>
+         <div class="slide-tag">
+               <div class="chat-view">
+                      <a><img id="view-photo" src="../Photo/wechat_07.png"></a>
+                      <span class='reddot'>
+              </div>
+               <!-- <div class="chat-view2"><a href="#"><img src="../Photo/greenwe_07.png"></a></div> -->
+               <div class="contact">
+                    <a><img id="contact-photo" src="../Photo/gren_04.png"></a>
+               </div>
+ <!--               <div class="contact2"><a href="#"><img src="../Photo/gren_04.png"></a></div> -->
+         </div>
+         <div class="slide-online">
+           <div class="slide_one"></div>
+         </div>
+         <!-- <div class="slide-online2"></div> -->
+         <div class="chating">
+           <div class="chating_one">
+             <!-- <div class="chat_ing"></div> -->
+           </div>
+         </div>
+   </div>
+  <!-- 聊天窗口 -->
+  <div id="chatArea" class="boxchat">
+     <div class="box_hd">
+       <div class="title_wrap">
+         <div class="title_body">
+           <a href="#" class="title_name" id="CA-nickname"></a>
+           <a href="#" class="Down_img">
+             <img src="../Photo/Down_02.png">
+           </a>
+         </div>
+       </div>
+     </div>
+     <div class="chat_content" style="position: absolute;top: 51px;right: 0;bottom: 0;left: 0;">
+         <div class="box-mainwrap"></div>
+     </div>
+     <div class="box_ft">
+       <div class="ft_toolbar">
+         <a href="#" class="face"></a>
+         <div class="checkchat"><span>聊天记录</span></div>
+       </div>
+       <div class="ft_content">
+         <div class="conten_area">
+           <textarea id="send-frame"></textarea>
+         </div>
+       </div>
+       <div class="action">
+       <span class="action_line">按下ctrl+Enter发送消息</span>
+         <a  class="btn_send">发送</a>
+       </div>
+     </div>
+     <div class="faces_box">
+       <div class="faces_content">
+       <div class="faces_title">
+         <ul>
+           <li class="facesT_name">常用表情</li>
+         </ul>
+       </div>
+       <div class="faces_main">
+         <ul></ul>
+       </div>
+     </div>
+     </div>
+  </div>
+         <!-- 聊天记录 -->
+<div class="history">
+     <div class="box_hd">
+       <div class="title_wrap">
+         <div class="title_body">
+           <a href="#" class="title_name">聊天记录</a>
+            <div style="left: 650px;top: 15px;position: absolute;"><img  class="close" src="../Photo/close_02.png"></div>
+           </a>
+         </div>
+       </div>
+     </div>
+     <div class="history_main">
+     </div>
+</div>
+      <!-- 个人资料界面 -->
+ <div class="box1">
+        <div class="box1-header">
+          <div class="title-wrap">
+            <div class="title">详细信息</div>
+          </div>
+        </div>
+        <div class="box1-main">
+          <div class="main-wrap">
+            <div class="profile">
+              <div class="avatar">
+                <span class="MyPhoto"></span>
+              </div>
+              <div class="nickname">
+                <h3 class="nickname1"></h3>
+              </div>
+              <p class="signature"></p>
+              <div class="meta_area">
+                <div class="meta_item">
+                  <label class="label_meta">备注：</label>
+                  <!-- <p class="meta_content" type="input"></p> -->
+                  <button class="meta_submit"></button>
+                </div>
+              </div>
+              <div class="sex">
+                性别：<span class="sex1"></span>
+              </div>
+              <div class="age">
+                年龄：<span class="age1"></span>
+              </div>
+               <div class="email">
+                <label>邮箱:<span class="email1"></span></label>
+              </div>
+              <div><button class="box1-correct">修改资料</button></div>
+            </div>
+          </div>
+        </div>
+ </div> 
+      <!-- 初始聊天界面 -->
+<div class="chat-orign">
+        <div class="orign-header">
+           <div class="title">未选择聊天</div>
+        </div>
+        <div class="orign-main">
+          <div class="o-main-wrap">
+            <div>
+              <img src="../Photo/dsf_02_02.png">
+            </div>
+          </div>
+        </div>
+</div>
+      <!-- 初始联系人界面 -->
+<div class="menber-orign">
+        <div class="orign-header">
+         <div class="title-wrap">
+           <div class="title">详细信息</div>
+           </div>
+        </div>
+        <div class="orign-main">
+          <div class="o-main-wrap">
+            <div>
+              <img src="../Photo/lianxiren_05.png">
+            </div>
+          </div>
+        </div>
+</div>
+<!--联系人界面-->
+ <div class="box2">
+        <div class="box1-header">
+          <div class="title-wrap">
+            <div class="title">详细信息</div>
+          </div>
+        </div>
+        <div class="box1-main">
+          <div class="main-wrap">
+            <div class="profile friend_main">
+              <div class="avatar">
+                <span class="FriendPhoto"></span>
+              </div>
+              <div class="nickname">
+                <h3 class="nickname1 nickname2"></h3>
+              </div>
+              <p class="signature signature2"></p>
+              <div class="meta_area">
+                <div class="meta_item friend_meta">
+                  <label class="label_meta">备注：</label>
+                  <input type="text" class="correct_name"></input>
+                  <p class="meta_content" type="text"></p>
+                </div>
+              </div>
+              <div class="sex">
+                性别：<span class="sex1 sex2"></span>
+              </div>
+              <div class="age">
+                年龄：<span class="age1 age2"></span>
+              </div>
+               <div class="email">
+                <label>邮箱:<span class="email1 email2"></span></label>
+              </div>
+              <div class="action_area">
+                  <a href="#" class="button" id="act_sent">发消息</a>
+              </div>
+            </div>
+          </div>
+        </div>
+ </div>
+      <!-- 修改信息界面 -->
+  <div class="correct">
+        <div class="correct-header">
+           <div class="correct-headerwrap">
+               <div class="title">个人信息</div>
+           </div>
+        </div>
+        <div class="correct-avator">
+          <span class="co-avator"></span>
+        </div>
+        <div class="correct-main">
+           <div class="c-nickname co-line">
+             <label for="co-name">昵称：</label>
+             <input type="text" id="co-name" class="co-input" placeholder="填写你的用户名" value=""></input>
+             <span class="right"></span>
+             <span class="wrong"></span>
+           </div>
+           <div class="c-sex co-line">
+             <label class="uctitle">性别：</label>
+             <input type="radio" id="Male" name="UserSex" value="男"
+             checked="checked"></input>
+             <label class="ucsex" for="Male">男</label>         
+             <input type="radio" id="Female" name="UserSex" value="女"></input>
+             <label class="ucsex" for="Female">女</label>
+           </div>
+           <div class="c-age co-line">
+             <label for="co-age">年龄：</label>
+             <select class="Co-age">
+           <!--   <option type="text" id="co-age"></option> -->
+             </select>
+           </div>
+           <div class="c-email co-line">
+             <label for="co-email">电子邮箱：</label>
+             <input type="text" id="co-email" class="co-input" placeholder="电子邮箱" value=""></input>
+             <span class="right"></span>
+             <span class="wrong"></span>
+           </div>
+           <div class="c-intro co-line">
+             <label for="co-intro">个性签名：</label>
+             <div>
+             <textarea type="text" id="co-intro" placeholder="编辑个性签名" value=''></textarea>
+             </div>
+             <span class="right" style="margin-top: -80px;margin-left: 136px"></span>
+             <span class="wrong" style="margin-top: -80px;margin-left: 136px"></span>
+           </div>
+           <div class="c-submit co-line">
+               <button  class="co-submit" type="submit">提交</button>
+           </div>
+          </div>
+ </div>
+    <!-- 好友资料小卡片 -->
+ <div class="mmmpop-profile">
+   <div class="profile-mini">
+     <div class="profile-mini-hd">
+       <div avator>
+         <span class="Mini_img"></span>
+       </div>
+     </div>
+     <div class="profile-mini-bd">
+       <div class="nickname_area">
+         <a class="Tochat">
+           <img src="../Photo/Logo_wechat_02.png" class="Tochat_img">
+         </a>
+         <h4 class="Mini_nickname"></h4>
+         <img src="../Photo/Man_02.png" class="Sexstand">
+       </div>
+       <div class="Mmeta_area">
+         <div class="meta_item">
+           <label class="label" for="correct_name frieng_Sname">备注：</label>
+           <p class="frieng_Sname value">点击修改备注</p>
+           <input type="text" class="Mcorrect_name"></input>
+           <button class="Mini_submit"></button>
+         </div>
+       </div>
+     </div>
+   </div>  
+ </div>
+</div>
+</div>
+
+  <!--End Chat-->
+</body>
+</html>

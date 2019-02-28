@@ -1,0 +1,1158 @@
+*{
+   margin: 0;
+   padding: 0;
+}
+html{
+	height: 100%;
+}
+body{
+	font-family: "Microsoft Yahei","微软雅黑",'Arial',sans-serif;
+	height: 100%;
+    background-image:url("../Photo/web_wechat_login_bg28a2f7.jpg");
+	background-size:100% 100%;
+	background-repeat: no-repeat;
+}
+/************登录页面***************/
+.login{
+	/*position: relative;*/
+	height: 100%;
+	min-width: 860px;
+	min-height: 700px;
+	overflow: auto;
+}
+#Login-header{
+    width: 100%;
+    margin: 0 auto;
+}
+#Login-mainbody{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -260px;
+    margin-top: -270px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    background-color: #fff;
+    width: 540px;
+    height: 480px;
+    box-shadow: #999 0 2px 10px;
+    -moz-box-shadow: #999 0 2px 10px;
+    -webkit-box-shadow: #999 0 2px 10px;
+}
+.login-box{
+    margin:auto;
+    text-align: center;
+    background: #778080;
+    border-radius: 5px;
+    height: 100%;
+}
+#Login-header h3{
+	font-size:24px; 
+	line-height:25px; 
+	font-weight:300; 
+	letter-spacing:3px; 
+	color:#C8C8C8; 
+	text-align:center;
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+.login-pirture{
+	width: 140px;
+	height: 140px;
+	border-radius: 70px;
+	background:url("../Photo/dog.jpg");
+	background-size: 100%;
+	margin: 0px auto;
+}
+.user_input{
+	font-size: 20px;
+	color: #C8C8C8;
+	margin: 25px auto 0px;
+}
+.user input{
+	min-height: 30px;
+	font-family: "微软雅黑",sans-serif;
+	font-size: 16px;
+	color:#C8C8C8;
+	display: inline-block;
+}
+.user{
+	display: inline-block;
+	margin-left: 30px;
+}
+.user label{
+      color:#C8C8C8; 
+      height:35px; 
+      padding:0 10px; 
+      font-size:18px;
+      line-height:35px;
+      margin-bottom:10px;
+      position:relative;
+}
+.line{
+	 margin-bottom: 12px;
+}
+.line a{
+	display: inline-block;
+	color: #C8C8C8;
+}
+.create{
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	color: #0b4df4;
+	vertical-align: middle;
+	padding-bottom: 5px;
+	padding-left: 15px;
+}
+.logIn{
+	text-align: center;
+	min-width: 170px;
+	min-height: 40px;
+	border-radius: 8px;
+	box-shadow: 8px 8px 5px #686f6c;
+	background-color: #3baff7;
+	font-size: 16px;
+	font-family: "方正黑体";
+	font-weight: bold;
+	color: #fff;
+	border: none;
+	margin:10px 0px 20px 40px;
+	letter-spacing: 10px;
+}
+.Remember_pass label{
+	  color:#C8C8C8; 
+      height:35px; 
+      font-size:14px;
+      line-height:35px;
+      cursor: pointer;
+}
+#pass_checkbox{
+	vertical-align: middle;
+	margin-left: -80px
+}
+.inButton{
+	margin-left: -20px;
+}
+/********************************************
+/****************聊天区域*********************/
+.Main{
+	height: 80%;
+    min-height: 600px;
+    padding-top: 100px;
+    display: none;
+}
+#Mainchat{
+	max-width: 1000px;
+    min-width: 800px;
+    height: 100%;
+    margin: 0 auto;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    overflow: hidden;
+}
+.slidebar{
+	width: 280px;
+	height: 100%;
+	background: #2e3238;
+	position: relative;
+	float: left;
+}
+.user-img{
+	width: 40px;
+	height: 40px;
+	border-radius: 4px;
+}
+.slide-header{
+	position: relative;
+	padding: 18px;
+}
+.user-img{
+	display: table-cell;
+	vertical-align: middle;
+	word-wrap: break-word;
+	word-break: break-all;
+	padding-right: 11px;
+}
+.UserPhoto{
+	width: 40px;
+	height: 40px;
+	border-radius: 2px;
+	display: block;
+	background: url("../Photo/dog.jpg");
+	background-size: 100%;
+}
+.Nickname{
+	display: table-cell;
+	vertical-align: middle;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+#status{
+	font-size: 16px;
+	color: #fff;
+	opacity: 0.9;
+}
+.display_name{
+	display: block;
+	font-size: 18px;
+	font-weight: bold;
+	width: 156px;
+	overflow: hidden;
+	color: #fff;
+	text-decoration: none;
+	opacity: 0.9;
+}
+.Tag{
+	display: table-cell;
+	vertical-align: middle;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+.Tag a{
+	font-size: 18px;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	opacity: 0.9;
+}
+.slide-tag{
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+    position: relative;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #24272C;
+    border-top: 1px solid #24272C;
+}
+.chat-view,.chat-view2{
+	border-right:  1px solid #24272C;
+	float: left;
+	width: 50%;
+	height: 42px;
+}
+.chat-view a,.chat-view2 a{
+	text-decoration: none;
+	opacity: 0.9;
+	cursor: pointer;
+}
+.chat-view a img,.chat-view2 a img{
+	vertical-align: bottom;
+}
+.chat-view2{
+	display: none;
+}
+#view-photo{
+	position: relative;
+	top: 7px;
+}
+.contact2{
+     display: inline-block;
+     padding-left: 50px;
+}
+.contact{
+	display: inline-block;
+}
+.contact a,.contact2 a{
+	color: #fff;
+	opacity: 0.9;
+	text-decoration: none;
+	cursor: pointer;
+}
+.contact2{
+	display: none;
+}
+#contact-photo{
+	position: relative;
+	top: 5px;
+}
+.slide-online{
+	min-height: 538px;
+}
+.chating{
+	display: none;
+	overflow-y:auto;
+    height: 82%;
+    width: auto;
+    position: relative;
+}
+/*******************聊天窗口**********************/
+#chatArea{
+	position: relative;
+	background-color: #eee;
+	height: 100%;
+	overflow: hidden;
+	display: none;
+}
+.box_hd{
+	text-align: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    line-height: 30px;
+    position: absolute;
+}
+.box_hd .title_wrap{
+	position: relative;
+    padding: 10px 0;
+    margin: 0 19px;
+    border-bottom: 1px solid #d6d6d6;
+    background-color: #EEE;
+    z-index: 1024;
+}
+.box_hd .title_body{
+	cursor: pointer;
+	font-weight: 400;
+    height: 25px;
+    display: inline-block;
+    font-size: 14px;
+}
+.Down_img img{
+  width: 10px;
+    height: 10px;
+    vertical-align: middle;
+    display: inline-block;
+}
+.title_name{
+	display: inline-block;
+    vertical-align: middle;
+    max-width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    text-decoration: none;
+    color: #000;
+    font-weight: 400;
+}
+.box-mainwrap{
+	position: relative;
+	overflow-y: auto;
+    overflow-x: hidden;
+    /*height: 78%;*/
+	/*display: none;*/
+}
+.box_main{
+	margin-bottom: 0px;
+    margin-right: 0px;
+    height: 546px;
+    bottom: 180px;
+    padding: 0 19px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    /*display: none;*/
+}
+.box_ft{
+	height: 180px;
+    margin-right: 19px;
+    border-top: 1px solid #d6d6d6;
+        position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.ft_toolbar{
+	height: 30px;
+    padding: 5px 17px;
+}
+.face{
+	background: url('../Photo/face_02.png') 0 -805px;
+    width: 30px;
+    height: 23px;
+    vertical-align: middle;
+    display: inline-block;
+}
+.checkchat{
+	float: right;
+	cursor: pointer;
+	display: inline-block;
+}
+.ft_content{
+	display: block;
+	height: 6em;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-left: 20px;
+    outline: 0;
+    border: 0;
+    font-size: 14px;
+}
+.ft_content textarea{
+	min-height: 78px;
+	min-width: 678px;
+	border:none;
+	background-color: #eee;
+	font-size: 14px;
+    font-family: '微软雅黑';
+    resize: none;
+    overflow-x:hidden;
+    overflow-y:auto;
+    border:0;
+    outline: none;
+}
+.action{
+	text-align: right;
+    margin-top: 5px;
+}
+.action_line{
+	color: #888;
+    font-size: 12px;
+    margin-left: 10px;
+    margin-right: 7px;
+}
+.btn_send{
+	display: inline-block;
+    border: 1px solid #c1c1c1;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    padding: 3px 20px;
+    font-size: 14px;
+    background-color: #fff;
+    color: #222;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.history{
+    position: relative;
+    background-color: #eee;
+    height: 100%;
+    overflow: hidden;
+     display: none; 
+}
+.history_main{
+	position: absolute;
+    top: 51px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.his_mainbody{
+	position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 95%;
+    top: 10px;
+    left: 14px;
+}
+.me,.you{
+	margin:10px;
+}
+.me-hd-name,.me-hd-time{
+	color: green;
+	font-size: 16px;
+	margin-right: 15px;
+}
+.you-hd-name,.you-hd-time{
+	color: blue;
+	font-size: 16px;
+	margin-right: 15px;
+
+}
+.me-content,.you-content pre{
+	font-family:"微软雅黑";
+	font-size: 14px;
+}
+/********************************************************/
+/********************下拉列表*****************************/
+.mmpop{
+	position: absolute;
+    background-color: #fff;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    outline: 0;
+    top: 60px;
+    left: 145px;
+}
+.dropdown-menu{
+	background-color: #fff;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid #d6d6d6;
+    box-shadow: rgba(0,0,0,.1) 2px 3px 10px;
+    -moz-box-shadow: rgba(0,0,0,.1) 2px 3px 10px;
+    -webkit-box-shadow: rgba(0,0,0,.1) 2px 3px 10px;
+    min-width: 125px;
+    display: none;
+}
+.dropdown-menu li a{
+    display: block;
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    padding: 8px;
+    border-bottom: 1px solid #f1f1f1;
+    text-align: center;
+}
+.dropdown-menu li a:hover{
+	background-color:#f5f5f5;
+}
+/*********************个人资料***************************/
+.box1{
+	position: relative;
+	background-color: #eee;
+	height: 100%;
+	overflow: hidden;
+	display: none;
+}
+.box2{
+    position: relative;
+	background-color: #eee;
+	height: 100%;
+	overflow: hidden;
+	display: none
+}
+.box1-header{
+	line-height: 30px;
+	text-align: center;
+}
+.title{
+	padding-top: 25px;
+	border-bottom: 1px solid #d6d6d6;
+}
+.box1-main{
+	position: absolute;
+    top: 51px;
+    right: 0;
+    bottom: 0;
+    left: 0}
+.profile{
+	text-align: center;
+	padding-top: 80px;
+	margin-bottom: 154px;
+}
+.friend_main{
+	margin-bottom: 178px;
+}
+.avatar{
+    margin-bottom: 22px;
+}
+.MyPhoto{
+	display: block;
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+	border-radius: 4px;
+	background: url("../Photo/dog.jpg");
+	background-size: 100%;
+}
+.FriendPhoto{
+	display: block;
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+	border-radius: 4px;
+	background: url("../Photo/cat.jpg");
+	background-size: 100%;
+}
+.nickname1{
+	font-weight: 400;
+	font-size: 24px;
+	margin-bottom: 10px;
+	min-height: 30px;
+	display: inline-block;
+}
+.signature{
+	font-size: 14px;
+	color: #888;
+	padding-top: 10px;
+	min-height: 16px;
+}
+.meta_area{
+	width: 250px;
+	margin: 30px auto 40px;
+}
+.label_meta{
+	display: inline-block;
+	font-size: 14px;
+	color: #888;
+}
+.meta_content,.meta_content1{
+	display: inline-block;
+	font-size: 14px;
+	color: #888;
+	word-wrap: normal;
+}
+/*.meta_content1{
+	display: none;
+}*/
+.sex,.age,.email{
+	font-size: 14px;
+	color: #888;
+	margin-bottom: 10px;
+}
+/****************好友界面*************/
+.action_area .button{
+   display: inline-block;
+    width: 200px;
+    text-align: center;
+    color: #fff;
+    line-height: 40px;
+    background-color: #42AC3E;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+/***************聊天初始界面**********/
+.chat-orign,.menber-orign{
+	position: relative;
+	background-color: #eee;
+	height: 100%;
+	overflow: hidden;
+	/*display: none;*/
+}
+.chat-orign{
+	display: none;
+}
+.orign-header{
+	line-height: 30px;
+	text-align: center;
+}
+.orign-main{
+	height: 100%;
+	width: 100%;
+}
+.title{
+	padding-top: 25px;
+	border-bottom: 1px solid #d6d6d6;
+	font-size: 16px;
+}
+.o-main-wrap{
+	text-align: center;
+    min-height: 618px;
+    height: 100%;	
+}
+.o-main-wrap div{
+	    margin: 50px;
+    text-align: center;
+    color: #888;
+    font-size: 14px;
+}
+.o-main-wrap div img{
+          width: 150px;
+    height: 150px;
+    vertical-align: middle;
+    display: inline-block;
+}
+/*****************修改资料*************/
+.correct{
+	position: relative;
+	background-color: #eee;
+	height: 100%;
+	overflow: hidden;
+	display: none;
+}
+.correct-header{
+	line-height: 30px;
+	text-align: center;
+}
+.correct-main{
+	height: 100%;
+	width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    margin: 30px auto 111px;
+}
+.title{
+	padding-top: 25px;
+	border-bottom: 1px solid #d6d6d6;
+	font-size: 16px;
+	position: relative;
+    padding: 10px 0;
+    margin: 0 19px;
+    border-bottom: 1px solid #d6d6d6;
+    background-color: #EEE;
+    z-index: 1024;
+}
+.co-avator{
+    display: block;
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+	border-radius: 4px;
+	background: url("../Photo/dog.jpg");
+	background-size: 100%;
+	margin-top: 40px;
+}
+.co-line{
+	padding-top: 20px;
+	font-size: 18px;
+	color: #888;
+}
+.co-input{
+	line-height: 28px;
+	vertical-align: middle;
+	font-size: 18px;
+    border-radius: 4px;
+    border: none;
+    background-color: #eee;
+    color: #888;
+    font-family: '微软雅黑';
+}
+.c-nickname{
+	margin-left: -18px;
+}
+.c-nickname label{
+	
+}
+.c-email,.c-intro{
+	margin-left: -36px;
+}
+.co-submit{
+	text-align: center;
+	min-width: 170px;
+	min-height: 40px;
+	border-radius: 8px;
+	background-color: #3baff7;
+	font-size: 16px;
+	font-family: "方正黑体";
+	font-weight: bold;
+	color: #fff;
+	border: none;
+	letter-spacing: 10px;
+	/*margin-left: 52px;*/
+}
+.uctitle{
+	margin-left: -75px;
+	margin-right: 20px;
+}
+.ucsex{
+	margin-right: 20px;
+}
+#co-name{
+	font-size: 
+}
+.Co-age{
+	width: 50px;
+	height: 28px;
+	margin-left: 20px;
+	font-size: 18px;
+	background: #eee;
+    border: none;
+    color: #888;
+    font-family: "微软雅黑";
+}
+.c-age label{
+	margin-left: -145px;
+}
+.c-email label{
+	margin-left: -18px;
+}
+.c-intro label{
+	margin-left: -220px;
+}
+#co-intro{
+	border: none;
+    resize: none;
+    width: 280px;
+    margin-top: 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    line-height: 40px;
+    background: #eee;
+    font-size: 16px;
+    color: #888;
+    font-family: '微软雅黑';
+    text-align: center;
+}
+.box1-correct{
+	cursor: pointer;
+    font-size: 14px;
+    letter-spacing: 5px;
+    margin-top: 20px;
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    color: #fff;
+    line-height: 40px;
+    background-color: #42AC3E;
+    text-decoration: none;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border: none;
+    font-weight: bold;
+    outline: none;
+}
+.right{
+	color: #48A309;
+    background: url("../Photo/right_02.png") 0 11px no-repeat;
+    display: inline-block;
+    min-width: 15px;
+    min-height: 28px;
+    position: absolute;
+    display: none;
+}
+.wrong{
+	color: #f66;
+    background: url("../Photo/wrong_05.png") 0 11px no-repeat;
+        display: inline-block;
+    min-width: 15px;
+    min-height: 28px;
+    position: absolute;
+    display: none;
+}
+/*好友*/
+.slide-online{
+	display: none;
+	overflow: auto;
+	height: 82%;
+	width: auto;
+	position: relative;
+}
+.slide-online2{
+	/*display: none;*/
+	overflow: auto;
+	height: 82%;
+	width: auto;
+	position: relative;
+}
+.menber,.chat_ing{
+	overflow: hidden;
+	padding: 12px 18px 11px;
+	border-bottom: 1px solid #292C33;
+	cursor: pointer;
+	position: relative;
+}
+.menber:hover,.chat_ing:hover{
+	background: #42464d;
+}
+.m-pirture{
+	display: block;
+	width: 40px;
+	height: 40px;
+	border-radius: 2px;
+	background: url("../Photo/cat.jpg");
+	background-size: 100%;
+}
+.men-pirture{
+	float: left;
+	margin-right: 10px;
+	position: relative;
+}
+.icon{
+	position: absolute;
+    top: -6px;
+    right: -6px;
+    color: #FFF;
+    font-style: normal;
+    text-align: center;
+    display: none;
+}
+.wechat_reddot{
+	background: url('../Photo/red_02_02.png');
+	width: 12px;
+    height: 10px;
+    vertical-align: middle;
+    display: inline-block;
+    display: none;
+}
+.reddot{
+	background: url('../Photo/red_02_02.png');
+    width: 12px;
+    height: 10px;
+    position: absolute;
+  /*  display: inline-block;*/
+    left: 80px;
+    bottom: 30px;
+    display: none;
+}
+.chat-item{
+	overflow: hidden;
+}
+.s-nickname{
+	font-weight: 400;
+	font-size: 13px;
+	color: #fff;
+	line-height: 20px;
+}
+.s-nick-text{
+    vertical-align: top;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+/********发信息********/
+.clearfix:after{
+	content: " ";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+.m-one{
+	overflow: hidden;
+}
+.m-body{
+	margin-bottom: 16px;
+	float: left;
+	width: 100%;
+}
+.other-body{
+	float: right;
+    text-align: right;
+    clear: right;
+    width: 100%;
+    margin-bottom: 16px;
+}
+.m-time{
+	text-align: center;
+	margin: 10px auto;
+	max-height: 50%;
+}
+.m-time span{
+	display: inline-block;
+	background-color: #dcdcdc;
+    font-size: 12px;
+    padding: 1px 18px;
+    color: #fff;
+    border-radius: 2px;
+}
+.other-avator{
+	float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    cursor: pointer;
+    background: url("../Photo/dog.jpg");
+    background-size: 100%;
+}
+.avator{
+	width: 40px;
+    height: 40px;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    float: left;        /*左右方面*/
+    cursor: pointer;
+    background: url("../Photo/cat.jpg");
+    background-size: 100%;
+}
+.content{
+	overflow: hidden;
+}
+.content-nick{
+	font-weight: 400;
+    padding-left: 10px;
+    font-size: 12px;
+    height: 22px;
+    line-height: 24px;
+    color: #4f4f4f;
+    width: 350px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+.other-bubble{
+	background-color: #b2e281;
+    max-width: 500px;
+    min-height: 1em;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    text-align: left;
+    font-size: 14px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    margin: 0 10px;
+}
+.bubble{
+	max-width: 500px;
+    min-height: 1em;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    text-align: left;
+    font-size: 14px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    margin: 0 10px;
+    background-color: #fff;  /* 气泡背景色 */
+}
+.bubble_wrap{
+	word-wrap: break-word;
+	word-break: break-all;
+	min-height: 25px;
+}
+.m_meg{
+	padding: 9px 13px;
+}
+.meg{
+	margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    white-space: pre-wrap;
+    word-break: initial;
+}
+/************好友资料小卡片************/
+.mmmpop-profile{
+	position: absolute;
+	background-color: #fff;
+	outline: 0;
+	border-radius: 4px;
+	overflow: hidden;
+	box-shadow: rgba(0,0,0,.1) 0 5px 10px;
+	top: 150px;
+	left:1020px;
+	display: none;
+}
+.Mini_img{
+	width: 220px;
+	height: 220px;
+	display: block;
+    background: url("../Photo/cat.jpg");
+	background-size: 100%;
+}
+.profile-mini-bd {
+    padding: 20px;
+    min-height: 50px;
+}
+.profile-mini-bd .nickname_area{
+	margin-bottom: 8px;
+}
+.Tochat{
+	float: right;
+}
+.Tochat_img{
+	background: url('../Photo/menber.png') 0 -2210px;
+    width: 22px;
+    height: 22px;
+    vertical-align: middle;
+    display: inline-block;
+}
+.Mini_nickname{
+	font-weight: 400;
+    font-size: 18px;
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 110px;
+    width: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+.Sexstand{
+	background: url('../Photo/menber.png') 0 -2473px;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    display: inline-block;
+}
+.Mmeta_area .label{
+	float: left;
+    font-size: 14px;
+    color: #888;
+    margin-right: 10px;
+}
+.frieng_Sname{
+	font-size: 14px;
+    color: #888;
+    width: 105px;
+    overflow: hidden;
+    white-space: nowrap;
+    word-wrap: normal;
+/*    padding-left: 5px;
+    padding-right: 5px;*/
+}
+.correct_name,.Mcorrect_name{
+	display: none;
+	width: 120px;
+}
+.Mini_submit{
+	display: none;
+}
+/****表情样式**********/
+.faces_box{
+position: absolute;
+width: 428px;
+height: 225px;
+bottom: 182px;
+display: none;
+}
+.faces_content{
+background: #fff;
+border: 1px #ccc solid;
+width: 390px;
+height: 216px;
+margin: 3px 4px;
+}
+.faces_title{
+  height: 40px;
+position: relative;
+}
+.facesT_name{
+	width: 82px;
+height: 30px;
+bottom: 0;
+left: 15px;
+text-align: center;
+line-height: 32px;
+font-weight: bold;
+color: #333;
+}
+.faces_main ul{
+	margin: 5px 8px;
+overflow: hidden;
+border-top: 1px #CCC solid;
+border-left: 1px #CCC solid;
+width: 360px;
+}
+.faces_main ul li{
+float: left;
+border-right: 1px #CCC solid;
+border-bottom: 1px #CCC solid;
+height: 22px;
+width: 26px;
+margin: -1px 0 0 -1px;
+padding: 4px 2px;
+text-align: center;
+list-style-type: none;
+}
+.faces_main ul li a{
+	    outline-style: none;
+    color: #535353;
+    text-decoration: none;
+    cursor: pointer;
+}
+.faces_main ul li a img{
+	width: 22px;
+    height: 22px;
+}
+/********设置滚动条样式*******************/
+::-webkit-scrollbar{
+	width: 6px;
+	height: 6px;
+}
+::-webkit-scrollbar-track-piece
+{
+    background-color: transparent;
+    -webkit-border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:vertical
+{
+    background-color: #c3c3c3;
+    -webkit-border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:horizontal
+{
+    background-color: #c3c3c3;
+    -webkit-border-radius: 3px;
+}
